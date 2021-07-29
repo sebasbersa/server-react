@@ -15,9 +15,7 @@ mongoose.connect("mongodb://"+IP_SERVER+":"+portDb+"/nombredatabase",{
         console.log("Conexión a la base de datos correctamente");
 
         app.listen(port, ()=>{
-            console.log("----------------");
             console.log("----API_REST----");
-            console.log("----------------");
             console.log("http://"+IP_SERVER+":"+port+"/api/"+API_VERSION+"/");
         })
     }
